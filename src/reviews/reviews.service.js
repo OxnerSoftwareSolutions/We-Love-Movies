@@ -1,28 +1,3 @@
-// const knex = require("../db/connection");
-
-// function list() {
-//     return knex("reviews");
-// }
-
-// function read(reviewId) {
-//     return knex("reviews")
-//     .where({review_id: reviewId});
-// }
-
-// async function update(review) {
-//     return knex(tableName)
-//       .where({ review_id: review.review_id })
-//       .update(review, "*")
-//       .then(() => read(review.review_id))
-//       .then(setCritic);
-//   }
-
-// function destroy(reviewId) {
-//     return knex("reviews")
-//     .where({review_id: reviewId})
-//     .del();
-// }
-
 const knex = require("../db/connection");
 const tableName = "reviews";
 
