@@ -14,7 +14,7 @@ function list() {
 
 function read(movieId) {
     return knex("movies")
-    .where({movie_id: movieId})
+    .where({movie_id: movieId}).first();
 }
 
 function getCritics(criticId) {
